@@ -27,7 +27,7 @@ require("./db/mongoose");
 const port = process.env.PORT || 8080;
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the backend");
+  res.send("Welcome to the backend. Please add some Params!");
 });
 
 app.listen(port, () => {
