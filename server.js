@@ -13,14 +13,6 @@ app.use(express.json());
 const appRouter = require("./routes/apps_routes");
 app.use(appRouter);
 
-// if (process.env.NODE_ENV === "production") {
-//   // Serve any static files
-//   app.use(express.static(path.join(__dirname, "client/build")));
-//   // Handle React routing, return all requests to React app
-//   app.get("*", (request, response) => {
-//     response.sendFile(path.join(__dirname, "client/build", "index.html"));
-//   });
-// }
 if (process.env.NODE_ENV !== "production") require("dotenv").config();
 require("./db/mongoose");
 

@@ -32,8 +32,10 @@ router.get("/apps", async (req, res) => {
   }
 
   try {
+    const order = req.query.order === "desc" ? -1 : 1;
     if (req.query.by === "name") {
-      let sortName = { name: 1 };
+      let sortName = { name: order };
+
       const apps = await App.find(req.apps).sort(sortName);
 
       const startIndex = (start - 1) * end;
@@ -43,7 +45,7 @@ router.get("/apps", async (req, res) => {
       res.send(resultApps);
     }
     if (req.query.by === "id") {
-      let sortId = { _id: 1 };
+      let sortId = { _id: order };
       const apps = await App.find(req.apps).sort(sortId);
 
       const startIndex = (start - 1) * end;
