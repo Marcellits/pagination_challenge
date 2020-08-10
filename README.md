@@ -4,9 +4,9 @@
 
 This app is a simple backend pagination solution using params such as name, id, start, end and max page size to order page results.
 
-This project is built in JavaScript, Node.js , and Express to develop the server, and MongoDB and Mongoose Library to develop the data base and routes.
+This project is built in JavaScript, Node.js , and Express to develop the server and the routes, and MongoDB and Mongoose Library to develop the database.
 
-## Instalation
+## Installation
 
 install yarn.  
 install nodemon.  
@@ -17,6 +17,10 @@ install dotenv.
 ## .env
 
 Set your own MongoDB according with .sample.env file.
+
+## Run
+
+Running the server: yarn dev
 
 ## Deployment
 
