@@ -55,7 +55,7 @@ router.get("/apps", async (req, res) => {
       res.send(resultApps);
     }
     if (req.query.by === undefined) {
-      res.send("Please define name or id as a param.");
+      res.send("Error. Please define 'by' as a param.");
     }
   } catch (e) {
     res.status(500).send();
