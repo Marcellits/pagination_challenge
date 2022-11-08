@@ -62,7 +62,3 @@ Two routes were built using POST and GET requests. The first one was used to add
 - Setting the range according with params.
 
 By default, MongoDB generates a unique ObjectID identifier. So avoiding two id's for each document, I used only the default id (with underscore).
-
-## Do you want to check how this project works?
-
-https://fathomless-ravine-16693.herokuapp.com/
